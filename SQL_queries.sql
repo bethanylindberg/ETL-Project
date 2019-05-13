@@ -1,5 +1,6 @@
 use space_db;
 
+<<<<<<< HEAD
 SELECT launch_date,launch_date
 FROM launch_log;
 
@@ -23,3 +24,8 @@ GROUP BY  YEAR(launch_date),country;
 SELECT YEAR(launch_date),count(*) as Launches
 FROM ucs_satellites 
 GROUP BY YEAR(launch_date);
+=======
+SELECT launch_date,site
+FROM launch_log;
+
+>>>>>>> eddf3dc7f3d9528d551c23a33d9049c53160fac2
