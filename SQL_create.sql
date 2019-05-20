@@ -75,7 +75,7 @@ CREATE TABLE `ucs_satellites` (
   `launch_date` date DEFAULT NULL,
   `expected_lifetime` double DEFAULT NULL,
   `contractor` varchar(150) DEFAULT NULL,
-  `Country of Contractor` varchar(30) DEFAULT NULL,
+  `country_of_contractor` varchar(30) DEFAULT NULL,
   `launch_site` varchar(40) DEFAULT NULL,
   `launch_vehicle` varchar(35) DEFAULT NULL,
   `cospar_number` varchar(15) DEFAULT NULL,
