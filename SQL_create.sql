@@ -16,7 +16,7 @@ CREATE TABLE `launch_log` (
   `suc` varchar(30) DEFAULT NULL,
   `Ref` varchar(30) DEFAULT NULL,
   `launch_date` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 CREATE TABLE `nasa_facilities` (
   `center` varchar(50) DEFAULT NULL,
@@ -34,7 +34,7 @@ CREATE TABLE `nasa_facilities` (
   `zipcode` varchar(10) DEFAULT NULL,
   `latitude` decimal(10,8) DEFAULT NULL,
   `longitude` decimal(11,8) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 CREATE TABLE `space_x_launches` (
   `launch_site` varchar(75) DEFAULT NULL,
@@ -53,7 +53,7 @@ CREATE TABLE `space_x_launches` (
   `payload_type` varchar(20) DEFAULT NULL,
   CONSTRAINT `space_x_launches_chk_1` CHECK ((`launch_success` in (0,1))),
   CONSTRAINT `space_x_launches_chk_2` CHECK ((`rocket_reused` in (0,1)))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 CREATE TABLE `ucs_satellites` (
   `name_of_satellite` varchar(150) DEFAULT NULL,
@@ -85,4 +85,4 @@ CREATE TABLE `ucs_satellites` (
   `comments` varchar(500) DEFAULT NULL,
   `orbital_data_source` varchar(50) DEFAULT NULL,
   `source` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
